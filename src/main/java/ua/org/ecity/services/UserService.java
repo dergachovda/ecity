@@ -82,4 +82,8 @@ public class UserService {
         return GameStatus.USER_PASSWORD_INCORECT;
     }
 
+    public User findUserByEmail(String userEmail) {
+        return userRepository.getByEmail(userEmail);
+    }
+
 }
